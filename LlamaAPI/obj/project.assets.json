@@ -1,0 +1,149 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "LLamaSharp/0.5.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/LLamaSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/LLamaSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "LLamaSharp.Backend.Cuda12/0.5.1": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libllama.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx-x64/native/_._": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/win-x64/native/libllama.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LLamaSharp/0.5.1": {
+      "sha512": "mTO6OXKkKGWDhuj7RU37O6NOSzVZhUmdrpgeI/l+Gx4pw4Z3nBksI1ERu0tcK7bZ62FtLuEoEf6OKzzysWD/4g==",
+      "type": "package",
+      "path": "llamasharp/0.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net6.0/LLamaSharp.dll",
+        "lib/net6.0/LLamaSharp.xml",
+        "lib/net7.0/LLamaSharp.dll",
+        "lib/net7.0/LLamaSharp.xml",
+        "lib/netstandard2.0/LLamaSharp.dll",
+        "lib/netstandard2.0/LLamaSharp.xml",
+        "llamasharp.0.5.1.nupkg.sha512",
+        "llamasharp.nuspec"
+      ]
+    },
+    "LLamaSharp.Backend.Cuda12/0.5.1": {
+      "sha512": "T6k9Oc8d3K+8ybKewOolibTjKvXlYA4bfd0lYxWFY+IkcxU2HJ9qeiodGhg441MCPpKpBoMbg8gvgvse/5nA1w==",
+      "type": "package",
+      "path": "llamasharp.backend.cuda12/0.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/netstandard2.0/SciSharp.TensorFlow.Redist.props",
+        "llamasharp.backend.cuda12.0.5.1.nupkg.sha512",
+        "llamasharp.backend.cuda12.nuspec",
+        "runtimes/linux-x64/native/libllama.so",
+        "runtimes/osx-x64/native/_._",
+        "runtimes/win-x64/native/libllama.dll"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "LLamaSharp >= 0.5.1",
+      "LLamaSharp.Backend.Cuda12 >= 0.5.1"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\cablu\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\cablu\\Dev\\Repos\\LlamaAPI\\LlamaAPI\\LlamaAPI.csproj",
+      "projectName": "LlamaAPI",
+      "projectPath": "C:\\Users\\cablu\\Dev\\Repos\\LlamaAPI\\LlamaAPI\\LlamaAPI.csproj",
+      "packagesPath": "C:\\Users\\cablu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\cablu\\Dev\\Repos\\LlamaAPI\\LlamaAPI\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\cablu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "dependencies": {
+          "LLamaSharp": {
+            "target": "Package",
+            "version": "[0.5.1, )"
+          },
+          "LLamaSharp.Backend.Cuda12": {
+            "target": "Package",
+            "version": "[0.5.1, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
